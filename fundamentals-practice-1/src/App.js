@@ -5,10 +5,11 @@ import { Route, Routes } from 'react-router-dom';
 import MaterialsSection from './components/MaterialsSection/MaterialsSection';
 // import { NavigationProvider } from './context/navigation';
 import HomePage from './components/Home/HomePage';
+import Linker from './components/Linker/Linker';
 import AsokanPage from './components/Participants/Asokan/AsokanPage';
-// import GeethuPage from './components/Participants/Asokan/GeethuPage';
-// import KarenPage from './components/Participants/Asokan/KarenPage';
-// import MamadouPage from './components/Participants/Asokan/MamadouPage';
+import GeethuPage from './components/Participants/Geethu/GeethuPage';
+import KarenPage from './components/Participants/Karen/KarenPage';
+import MamadouPage from './components/Participants/Mamadou/MamadouPage';
 
 
 const App = () => {
@@ -38,24 +39,40 @@ const App = () => {
   //   console.error('Error fetching Pikachu data:', error);
   // });
 
+
+  // {label: 'data types', desitination: '/data-types'},
+  // {label: 'function', desitination: '/normal-function'},
+  // {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
+  // {label: 'if, if else, else', desitination: '/if-statement'},
+  // {label: 'for', desitination: '/for-loop'},
+  // {label: '.forEach', desitination: '/for-each'},
+  // {label: '.map', desitination: '/map-loop'},
+  // {label: '.reduce', desitination: '/reduce'},
+
+
+
   const participantList = [
     'Asokan',
-    // 'Geethu',
-    // 'Karen',
-    // 'Mamadou',
+    'Geethu',
+    'Karen',
+    'Mamadou',
   ]
 
   const participantLinks = participantList.map(item => {
+
+    console.log('ITEM');
+    console.log(item);
+    const lowercaseName = item.toLowerCase();
+
     return (
-      <div key={item}>Link Here</div>
-      // <Link
-      //   key={item}
-      //   destination={`/${item.toLowerCase}`}
-      // >
-      //   <h3>{item}</h3>
-      // </Link>
-    )
-  })
+      <Linker
+        key={item}
+        destination={`/${item.toLowerCase()}`}
+      >
+        <h3>{item}</h3>
+      </Linker>
+    );
+  });
 
 
 
@@ -66,6 +83,9 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/asokan" element={<AsokanPage />} />
+        <Route path="/geethu" element={<GeethuPage />} />
+        <Route path="/karen" element={<KarenPage />} />
+        <Route path="/mamadou" element={<MamadouPage />} />
       </Routes>
 
       <h2>Materials</h2>

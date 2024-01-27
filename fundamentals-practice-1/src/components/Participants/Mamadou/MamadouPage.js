@@ -3,7 +3,7 @@
 const MamadouPage = () => {
 
   return (
-    <div>Mamadou</div>
+    <h1>Mamadou</h1>
   )
 }
 

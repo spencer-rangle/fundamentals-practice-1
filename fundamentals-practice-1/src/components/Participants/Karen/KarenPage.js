@@ -3,7 +3,7 @@
 const KarenPage = () => {
 
   return (
-    <div>Karen</div>
+    <h1>Karen</h1>
   )
 }
 

@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 
 const Linker = ({ destination, children }) => {
+
+  console.log('LInker')
+  console.log(destination)
   // const { navigate, currentPath } = useContext(NavigationContext);
 
   // From navigation?
@@ -11,15 +14,15 @@ const Linker = ({ destination, children }) => {
   //   setCurrentPath(destinationPath);
   // };
 
-  const handleClick = (event) => {
-    if (event.metaKey || event.ctrlKey) {
-      return;
-    }
-    event.preventDefault();
+  // const handleClick = (event) => {
+  //   if (event.metaKey || event.ctrlKey) {
+  //     return;
+  //   }
+  //   event.preventDefault();
 
-    console.log(event)
-    navigate(destination);
-  }
+  //   console.log(event)
+  //   navigate(destination);
+  // }
 
   return (
     // <div href={destination} onClick={handleClick}>

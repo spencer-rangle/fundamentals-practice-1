@@ -11,10 +11,19 @@ import GeethuPage from './components/Participants/Geethu/GeethuPage';
 import KarenPage from './components/Participants/Karen/KarenPage';
 import MamadouPage from './components/Participants/Mamadou/MamadouPage';
 
+// Sections
+import DataTypesPage from "./components/MaterialsSection/DataTypes/DataTypes";
+import NormalFunctionPage from "./components/MaterialsSection/NormalFunctionPage/NormalFunctionPage";
+import ArrowFunctionPage from "./components/MaterialsSection/ArrowFunctionPage/ArrowFunctionPage";
+import IfStatementPage from "./components/MaterialsSection/IfStatementPage/IfStatementPage";
+import ForLoopPage from "./components/MaterialsSection/ForLoopPage/ForLoopPage";
+import ForEachPage from "./components/MaterialsSection/ForEachPage/ForEachPage";
+import MapLoopPage from "./components/MaterialsSection/MapLoopPage/MapLoopPage";
+import ReducePage from "./components/MaterialsSection/ReducePage/ReducePage";
+
+
 
 const App = () => {
-
-
   // const routeList = [
   //   { path: '/asokan', componant: AsokanPage },
   //   { path: '/geethu', componant: GeethuPage },
@@ -60,10 +69,6 @@ const App = () => {
 
   const participantLinks = participantList.map(item => {
 
-    console.log('ITEM');
-    console.log(item);
-    const lowercaseName = item.toLowerCase();
-
     return (
       <Linker
         key={item}
@@ -86,7 +91,29 @@ const App = () => {
         <Route path="/geethu" element={<GeethuPage />} />
         <Route path="/karen" element={<KarenPage />} />
         <Route path="/mamadou" element={<MamadouPage />} />
+        <Route path="/data-types" element={<DataTypesPage />} />
+        <Route path="/normal-function" element={<NormalFunctionPage />} />
+        <Route path="/arrow-fuction" element={<ArrowFunctionPage />} />
+        <Route path="/if-statement" element={<IfStatementPage />} />
+        <Route path="/for-loop" element={<ForLoopPage />} />
+        <Route path="/for-each" element={<ForEachPage />} />
+        <Route path="/map-loop" element={<MapLoopPage />} />
+        <Route path="/reduce" element={<ReducePage />} />
       </Routes>
+
+
+      {/* {label: 'data types', desitination: '/data-types'},
+  {label: 'function', desitination: '/normal-function'},
+  {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
+  {label: 'if, if else, else', desitination: '/if-statement'},
+  {label: 'for', desitination: '/for-loop'},
+  {label: '.forEach', desitination: '/f'},
+  {label: '.map', desitination: '/map-loop'},
+  {label: '.reduce', desitination: '/reduce'}, */}
+
+
+
+
 
       <h2>Materials</h2>
       <MaterialsSection />

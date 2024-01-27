@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Linker = ({ destination, children }) => {
 
-  console.log('LInker')
-  console.log(destination)
   // const { navigate, currentPath } = useContext(NavigationContext);
 
   // From navigation?
@@ -27,6 +25,7 @@ const Linker = ({ destination, children }) => {
   return (
     // <div href={destination} onClick={handleClick}>
     <Link to={destination}>
+      {destination}
       {children}
     </Link>
   );

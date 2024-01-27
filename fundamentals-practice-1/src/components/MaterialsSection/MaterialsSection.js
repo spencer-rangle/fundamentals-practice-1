@@ -1,18 +1,34 @@
+import { Route, Routes } from 'react-router-dom';
+
+// Sections
+import DataTypesPage from "./DataTypes/DataTypes";
+import NormalFunctionPage from "./NormalFunctionPage/NormalFunctionPage";
+import ArrowFunctionPage from "./ArrowFunctionPage/ArrowFunctionPage";
+import IfStatementPage from "./IfStatementPage/IfStatementPage";
+import ForLoopPage from "./ForLoopPage/ForLoopPage";
+import ForEachPage from "./ForEachPage/ForEachPage";
+import MapLoopPage from "./MapLoopPage/MapLoopPage";
+import ReducePage from "./ReducePage/ReducePage";
+
+
 // import Link from '../Link/Link';
 import Linker from "../Linker/Linker";
 
+
 const materialItems = [
-  {label: 'data types', desitination: '/data-types'},
-  {label: 'function', desitination: '/normal-function'},
-  {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
-  {label: 'if, if else, else', desitination: '/if-statement'},
-  {label: 'for', desitination: '/for-loop'},
-  {label: '.forEach', desitination: '/for-each'},
-  {label: '.map', desitination: '/map-loop'},
-  {label: '.reduce', desitination: '/reduce'},
+  {label: 'data types', destination: '/data-types'},
+  {label: 'function', destination: '/normal-function'},
+  {label: 'arrow funcion =>', destination: '/arrow-fuction'},
+  {label: 'if, if else, else', destination: '/if-statement'},
+  {label: 'for', destination: '/for-loop'},
+  {label: '.forEach', destination: '/for-each'},
+  {label: '.map', destination: '/map-loop'},
+  {label: '.reduce', destination: '/reduce'},
 ]
 
 const materialLinks = materialItems.map(item => {
+  console.log('materials')
+  console.log(item)
   return (
     // <div key={item.key}>Link for here</div>
     <Linker

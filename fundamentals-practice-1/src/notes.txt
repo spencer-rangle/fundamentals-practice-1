@@ -1,0 +1,62 @@
+
+// App.js
+  // const routeList = [
+  //   { path: '/asokan', componant: AsokanPage },
+  //   { path: '/geethu', componant: GeethuPage },
+  //   { path: '/karen', componant: KarenPage },
+  //   { path: '/mamadou', componant: MamadouPage },
+  //   // { path: '/asokan', componant: AsokanPage },
+  //   // { path: '/asokan', componant: AsokanPage },
+  //   // { path: '/asokan', componant: AsokanPage },
+  // ]
+
+  // const data = fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+  // .then(response => {
+  //   if (!response.ok) {
+  //     throw new Error(`HTTP error! Status: ${response.status}`);
+  //   }
+  //   return response.json();
+  // })
+  // .then(data => {
+  //   console.log('Pikachu Data:', data);
+  // })
+  // .catch(error => {
+  //   console.error('Error fetching Pikachu data:', error);
+  // });
+
+
+  // {label: 'data types', desitination: '/data-types'},
+  // {label: 'function', desitination: '/normal-function'},
+  // {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
+  // {label: 'if, if else, else', desitination: '/if-statement'},
+  // {label: 'for', desitination: '/for-loop'},
+  // {label: '.forEach', desitination: '/for-each'},
+  // {label: '.map', desitination: '/map-loop'},
+  // {label: '.reduce', desitination: '/reduce'},
+
+    // <NavigationProvider>
+    // </NavigationProvider>
+
+
+
+
+
+// Linker.js
+  // const { navigate, currentPath } = useContext(NavigationContext);
+
+  // From navigation?
+  // const navigate = (destinationPath) => {
+  //   window.history.pushState({}, '', destinationPath);
+  //   setCurrentPath(destinationPath);
+  // };
+
+  // const handleClick = (event) => {
+  //   if (event.metaKey || event.ctrlKey) {
+  //     return;
+  //   }
+  //   event.preventDefault();
+
+  //   console.log(event)
+  //   navigate(destination);
+  // }
+

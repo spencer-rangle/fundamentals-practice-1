@@ -22,43 +22,7 @@ import MapLoopPage from "./components/MaterialsSection/MapLoopPage/MapLoopPage";
 import ReducePage from "./components/MaterialsSection/ReducePage/ReducePage";
 
 
-
 const App = () => {
-  // const routeList = [
-  //   { path: '/asokan', componant: AsokanPage },
-  //   { path: '/geethu', componant: GeethuPage },
-  //   { path: '/karen', componant: KarenPage },
-  //   { path: '/mamadou', componant: MamadouPage },
-  //   // { path: '/asokan', componant: AsokanPage },
-  //   // { path: '/asokan', componant: AsokanPage },
-  //   // { path: '/asokan', componant: AsokanPage },
-  // ]
-
-  // const data = fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-  // .then(response => {
-  //   if (!response.ok) {
-  //     throw new Error(`HTTP error! Status: ${response.status}`);
-  //   }
-  //   return response.json();
-  // })
-  // .then(data => {
-  //   console.log('Pikachu Data:', data);
-  // })
-  // .catch(error => {
-  //   console.error('Error fetching Pikachu data:', error);
-  // });
-
-
-  // {label: 'data types', desitination: '/data-types'},
-  // {label: 'function', desitination: '/normal-function'},
-  // {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
-  // {label: 'if, if else, else', desitination: '/if-statement'},
-  // {label: 'for', desitination: '/for-loop'},
-  // {label: '.forEach', desitination: '/for-each'},
-  // {label: '.map', desitination: '/map-loop'},
-  // {label: '.reduce', desitination: '/reduce'},
-
-
 
   const participantList = [
     'Asokan',
@@ -87,32 +51,19 @@ const App = () => {
 
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/asokan" element={<AsokanPage />} />
+        {/* <Route path="/asokan" element={<AsokanPage />} />
         <Route path="/geethu" element={<GeethuPage />} />
         <Route path="/karen" element={<KarenPage />} />
-        <Route path="/mamadou" element={<MamadouPage />} />
-        <Route path="/data-types" element={<DataTypesPage />} />
+        <Route path="/mamadou" element={<MamadouPage />} /> */}
+        {/* <Route path="/data-types" element={<DataTypesPage />} />
         <Route path="/normal-function" element={<NormalFunctionPage />} />
         <Route path="/arrow-fuction" element={<ArrowFunctionPage />} />
         <Route path="/if-statement" element={<IfStatementPage />} />
         <Route path="/for-loop" element={<ForLoopPage />} />
         <Route path="/for-each" element={<ForEachPage />} />
         <Route path="/map-loop" element={<MapLoopPage />} />
-        <Route path="/reduce" element={<ReducePage />} />
+        <Route path="/reduce" element={<ReducePage />} /> */}
       </Routes>
-
-
-      {/* {label: 'data types', desitination: '/data-types'},
-  {label: 'function', desitination: '/normal-function'},
-  {label: 'arrow funcion =>', desitination: '/arrow-fuction'},
-  {label: 'if, if else, else', desitination: '/if-statement'},
-  {label: 'for', desitination: '/for-loop'},
-  {label: '.forEach', desitination: '/f'},
-  {label: '.map', desitination: '/map-loop'},
-  {label: '.reduce', desitination: '/reduce'}, */}
-
-
-
 
 
       <h2>Materials</h2>
@@ -122,8 +73,6 @@ const App = () => {
       {participantLinks}
 
     </div>
-    // <NavigationProvider>
-    // </NavigationProvider>
   )
 }
 

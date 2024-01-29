@@ -1,17 +1,21 @@
+// import { NavigationProvider } from './context/navigation';
+// import Router from './components/Router/Router';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import Router from './components/Router/Router';
-// import Link from './components/Link/Link';
+import './App.scss';
 import MaterialsSection from './components/MaterialsSection/MaterialsSection';
-// import { NavigationProvider } from './context/navigation';
 import HomePage from './components/Home/HomePage';
 import Linker from './components/Linker/Linker';
+import Button from './components/Button/Button';
+import { ButtonTypesEnum, ButtonShapesEnum, ButtonSizesEnum } from './components/Button/Button';
+
+// Participants
 import AsokanPage from './components/Participants/Asokan/AsokanPage';
 import GeethuPage from './components/Participants/Geethu/GeethuPage';
 import KarenPage from './components/Participants/Karen/KarenPage';
 import MamadouPage from './components/Participants/Mamadou/MamadouPage';
 
-// Sections
+// MaterialsSection
 import DataTypesPage from "./components/MaterialsSection/DataTypes/DataTypes";
 import NormalFunctionPage from "./components/MaterialsSection/NormalFunctionPage/NormalFunctionPage";
 import ArrowFunctionPage from "./components/MaterialsSection/ArrowFunctionPage/ArrowFunctionPage";
@@ -24,30 +28,30 @@ import ReducePage from "./components/MaterialsSection/ReducePage/ReducePage";
 
 const App = () => {
 
-  const participantList = [
-    'Asokan',
-    'Geethu',
-    'Karen',
-    'Mamadou',
-  ]
-
-  const participantLinks = participantList.map(item => {
-
-    return (
-      <Linker
-        key={item}
-        destination={`/${item.toLowerCase()}`}
-      >
-        <h3>{item}</h3>
-      </Linker>
-    );
-  });
 
 
 
   return (
     <div>
       <h1>App Running</h1>
+      <Button
+        onMouseEnter={() => {console.log('Back to Home')}}
+        type={ButtonTypesEnum.primary}
+        shape={ButtonShapesEnum.rounded}
+        size={ButtonSizesEnum.big}
+        border={true}
+        hollow={false}
+        gradient={true}
+        shadow={true}
+      >
+        <Linker
+          key="home"
+          destination="./"
+        >
+          Home
+        </Linker>
+      </Button>
+
 
       <Routes>
         <Route path="/" exact element={<HomePage />} />
@@ -64,13 +68,6 @@ const App = () => {
         <Route path="/map-loop" element={<MapLoopPage />} />
         <Route path="/reduce" element={<ReducePage />} />
       </Routes>
-
-
-      <h2>Materials</h2>
-      <MaterialsSection />
-
-      <h2 style={{marginTop: '200px'}}>Parcipants</h2>
-      {participantLinks}
 
     </div>
   )

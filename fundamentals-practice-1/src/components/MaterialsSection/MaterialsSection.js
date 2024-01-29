@@ -27,8 +27,8 @@ const materialItems = [
 ]
 
 const materialLinks = materialItems.map(item => {
-  console.log('materials')
-  console.log(item)
+  console.log('materials');
+  console.log(item);
   return (
     // <div key={item.key}>Link for here</div>
     <Linker

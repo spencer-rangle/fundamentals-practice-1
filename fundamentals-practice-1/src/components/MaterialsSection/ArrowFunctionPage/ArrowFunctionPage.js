@@ -1,7 +1,10 @@
 
 const ArrowFunctionPage = () => {
   return (
-    <h1>Arrow Function Page</h1>
+    <div>
+      <h1>Arrow Function Page</h1>
+      
+    </div>
   )
 }
 

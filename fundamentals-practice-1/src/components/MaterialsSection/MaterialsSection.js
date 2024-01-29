@@ -18,7 +18,7 @@ import Linker from "../Linker/Linker";
 const materialItems = [
   {label: 'data types', destination: '/data-types'},
   {label: 'function', destination: '/normal-function'},
-  {label: 'arrow funcion =>', destination: '/arrow-fuction'},
+  {label: 'arrow function =>', destination: '/arrow-fuction'},
   {label: 'if, if else, else', destination: '/if-statement'},
   {label: 'for', destination: '/for-loop'},
   {label: '.forEach', destination: '/for-each'},

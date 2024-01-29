@@ -1,7 +1,7 @@
 // import { NavigationProvider } from './context/navigation';
 // import Router from './components/Router/Router';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import './App.scss';
 import MaterialsSection from './components/MaterialsSection/MaterialsSection';
 import HomePage from './components/Home/HomePage';
@@ -28,14 +28,18 @@ import ReducePage from "./components/MaterialsSection/ReducePage/ReducePage";
 
 const App = () => {
 
-
+  const handleHomeClick = (event) => {
+    console.log('Back to Home');
+    console.log(window.location);
+    window.location = 'http://localhost:3000/'
+  }
 
 
   return (
     <div>
       <h1>App Running</h1>
+      {/* onClick={(event) => { handleHomeClick(event) }} */}
       <Button
-        onMouseEnter={() => {console.log('Back to Home')}}
         type={ButtonTypesEnum.primary}
         shape={ButtonShapesEnum.rounded}
         size={ButtonSizesEnum.big}
@@ -44,6 +48,7 @@ const App = () => {
         gradient={true}
         shadow={true}
       >
+          {/* Home */}
         <Linker
           key="home"
           destination="./"

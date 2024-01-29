@@ -1,0 +1,21 @@
+/* CodeStyle.css */
+
+.code-container {
+  font-family: 'Courier New', monospace;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+

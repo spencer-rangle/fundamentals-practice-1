@@ -37,9 +37,7 @@ const ForEachPage = () => {
           const originalArray = [1, 2, 3];
           const doubledArray = [];
 
-          originalArray.forEach(function(num) {
-            doubledArray.push(num * 2);
-          });
+          originalArray.forEach(function(num) {`{ doubledArray.push(num * 2); }`});
 
           console.log(doubledArray); // Output: [2, 4, 6]
 
@@ -55,9 +53,7 @@ const ForEachPage = () => {
           // Example 4: Modifying array in-place using index
           const names = ['Alice', 'Bob', 'Charlie'];
 
-          names.forEach((name, index, array) => {
-            array[index] = `Hello, ${name}`;
-          });
+          names.forEach((name, index, array) => {"{ array[index] = `Hello, ${name}`; }"});
 
           console.log(names);
           // Output: ['Hello, Alice', 'Hello, Bob', 'Hello, Charlie']

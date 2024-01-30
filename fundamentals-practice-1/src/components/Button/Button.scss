@@ -21,6 +21,10 @@
 
 .text-white {
   color: white;
+  a {
+    color: white;
+    text-decoration: none; // Remove underline
+  }
   display: inline-block;
 }
 
@@ -32,11 +36,19 @@
 .hollow-primary {
   font-weight: 800;
   color: dodgerblue;
+  a {
+    color: dodgerblue;
+    text-decoration: none; // Remove underline
+  }
   border-color: dodgerblue;
 }
 .primary-gradient {
   // color: rgb(26, 94, 162);
   color: white;
+  a {
+    color: white;
+    text-decoration: none; // Remove underline
+  }
   background-image: linear-gradient(140deg, lightskyblue, dodgerblue);
   // linear-gradient: (140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%)
   border-color: rgb(26, 94, 162);
@@ -56,6 +68,10 @@
 }
 .success-gradient {
   color: seagreen;
+  a {
+    color: seagreen;
+    text-decoration: none; // Remove underline
+  }
   background-image: linear-gradient(140deg, palegreen, limegreen);
   // linear-gradient: (140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%)
   border-color: seagreen;
@@ -70,11 +86,19 @@
 .hollow-warning {
   font-weight: 800;
   color: coral;
+  a {
+    color: coral;
+    text-decoration: none; // Remove underline
+  }
   border-color: coral;
 }
 // darkorange tomato
 .warning-gradient {
   color: orangered;
+  a {
+    color: orangered;
+    text-decoration: none; // Remove underline
+  }
   background-image: linear-gradient(140deg, orange, coral);
   border-color: orangered;
 }
@@ -86,10 +110,18 @@
 .hollow-danger {
   font-weight: 800;
   color: red;
+  a {
+    color: red;
+    text-decoration: none; // Remove underline
+  }
   border-color: red;
 }
 .danger-gradient {
   color: white;
+  a {
+    color: white;
+    text-decoration: none; // Remove underline
+  }
   background-image: linear-gradient(140deg, indianred, red);
   border-color: crimson;
   // border-color: royalblue;
@@ -104,10 +136,18 @@
 .hollow-disabled {
   font-weight: 800;
   color: gray;
+  a {
+    color: gray;
+    text-decoration: none; // Remove underline
+  }
   border-color: gray;
 }
 .disabled-gradient {
   color: gray;
+  a {
+    color: gray;
+    text-decoration: none; // Remove underline
+  }
   background-image: linear-gradient(140deg, aliceblue, lightgray);
   border-color: gray;
 }

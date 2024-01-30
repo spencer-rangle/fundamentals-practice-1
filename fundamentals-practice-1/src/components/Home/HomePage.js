@@ -11,10 +11,10 @@ const HomePage = () => {
         Home Page
       </h1>
       <div>
-        <h2>Materials</h2>
-        <MaterialsSection />
-        <h2 style={{marginTop: '100px'}}>Parcipants</h2>
+        <h2>Participants</h2>
         <ParticipantsPage />
+        <h2 style={{marginTop: '100px'}}>Materials</h2>
+        <MaterialsSection />
       </div>
     </div>
   )

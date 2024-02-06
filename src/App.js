@@ -1,39 +1,41 @@
 // import { NavigationProvider } from './context/navigation';
 // import Router from './components/Router/Router';
-import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import './App.scss';
-import MaterialsSection from './components/MaterialsSection/MaterialsSection';
-import HomePage from './components/Home/HomePage';
-import Linker from './components/Linker/Linker';
-import Button from './components/Button/Button';
-import { ButtonTypesEnum, ButtonShapesEnum, ButtonSizesEnum } from './components/Button/Button';
+import React from 'react'
+import { Route, Routes, Link } from 'react-router-dom'
+import './App.scss'
+import MaterialsSection from './components/MaterialsSection/MaterialsSection'
+import HomePage from './components/Home/HomePage'
+import Linker from './components/Linker/Linker'
+import Button from './components/Button/Button'
+import {
+  ButtonTypesEnum,
+  ButtonShapesEnum,
+  ButtonSizesEnum,
+} from './components/Button/Button'
 
 // Participants
-import AsokanPage from './components/Participants/Asokan/AsokanPage';
-import GeethuPage from './components/Participants/Geethu/GeethuPage';
-import KarenPage from './components/Participants/Karen/KarenPage';
-import MamadouPage from './components/Participants/Mamadou/MamadouPage';
+import AsokanPage from './components/Participants/Asokan/AsokanPage'
+import GeethuPage from './components/Participants/Geethu/GeethuPage'
+import KarenPage from './components/Participants/Karen/KarenPage'
+import MamadouPage from './components/Participants/Mamadou/MamadouPage'
 
 // MaterialsSection
-import DataTypesPage from "./components/MaterialsSection/DataTypes/DataTypes";
-import NormalFunctionPage from "./components/MaterialsSection/NormalFunctionPage/NormalFunctionPage";
-import ArrowFunctionPage from "./components/MaterialsSection/ArrowFunctionPage/ArrowFunctionPage";
-import IfStatementPage from "./components/MaterialsSection/IfStatementPage/IfStatementPage";
-import ForLoopPage from "./components/MaterialsSection/ForLoopPage/ForLoopPage";
-import ForEachPage from "./components/MaterialsSection/ForEachPage/ForEachPage";
-import MapLoopPage from "./components/MaterialsSection/MapLoopPage/MapLoopPage";
-import ReducePage from "./components/MaterialsSection/ReducePage/ReducePage";
-
+import DataTypesPage from './components/MaterialsSection/DataTypes/DataTypes'
+import NormalFunctionPage from './components/MaterialsSection/NormalFunctionPage/NormalFunctionPage'
+import ArrowFunctionPage from './components/MaterialsSection/ArrowFunctionPage/ArrowFunctionPage'
+import IfStatementPage from './components/MaterialsSection/IfStatementPage/IfStatementPage'
+import ForLoopPage from './components/MaterialsSection/ForLoopPage/ForLoopPage'
+import ForEachPage from './components/MaterialsSection/ForEachPage/ForEachPage'
+import MapLoopPage from './components/MaterialsSection/MapLoopPage/MapLoopPage'
+import ReducePage from './components/MaterialsSection/ReducePage/ReducePage'
+import PrototypePage from './components/MaterialsSection/Prototypes/Prototypes'
 
 const App = () => {
-
   const handleHomeClick = (event) => {
-    console.log('Back to Home');
-    console.log(window.location);
+    console.log('Back to Home')
+    console.log(window.location)
     window.location = 'http://localhost:3000/'
   }
-
 
   return (
     <div>
@@ -48,15 +50,11 @@ const App = () => {
         gradient={true}
         shadow={true}
       >
-          {/* Home */}
-        <Linker
-          key="home"
-          destination="./"
-        >
+        {/* Home */}
+        <Linker key="home" destination="./">
           Home
         </Linker>
       </Button>
-
 
       <Routes>
         <Route path="/" exact element={<HomePage />} />
@@ -72,10 +70,10 @@ const App = () => {
         <Route path="/for-each" element={<ForEachPage />} />
         <Route path="/map-loop" element={<MapLoopPage />} />
         <Route path="/reduce" element={<ReducePage />} />
+        <Route path="/prototype" element={<PrototypePage />} />
       </Routes>
-
     </div>
   )
 }
 
-export default App;
+export default App

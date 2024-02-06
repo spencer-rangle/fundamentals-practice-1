@@ -60,10 +60,6 @@ const App = () => {
 
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/asokan" element={<AsokanPage />} />
-        <Route path="/geethu" element={<GeethuPage />} />
-        <Route path="/karen" element={<KarenPage />} />
-        <Route path="/mamadou" element={<MamadouPage />} />
         <Route path="/data-types" element={<DataTypesPage />} />
         <Route path="/normal-function" element={<NormalFunctionPage />} />
         <Route path="/arrow-fuction" element={<ArrowFunctionPage />} />
@@ -73,7 +69,6 @@ const App = () => {
         <Route path="/map-loop" element={<MapLoopPage />} />
         <Route path="/reduce" element={<ReducePage />} />
       </Routes>
-
     </div>
   )
 }

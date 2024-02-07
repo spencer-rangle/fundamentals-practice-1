@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Tailwind
 
-Installed tailwind to write easy to read CSS look and feel on React App
+Installed tailwind to write easy to read CSS styling
 
 More Documentation can be found here
 https://tailwindcss.com/docs/installation

@@ -1,16 +1,3 @@
-import { Route, Routes } from 'react-router-dom'
-
-// Sections
-import DataTypesPage from './DataTypes/DataTypes'
-import NormalFunctionPage from './NormalFunctionPage/NormalFunctionPage'
-import ArrowFunctionPage from './ArrowFunctionPage/ArrowFunctionPage'
-import IfStatementPage from './IfStatementPage/IfStatementPage'
-import ForLoopPage from './ForLoopPage/ForLoopPage'
-import ForEachPage from './ForEachPage/ForEachPage'
-import MapLoopPage from './MapLoopPage/MapLoopPage'
-import ReducePage from './ReducePage/ReducePage'
-import PrototypePage from './Prototypes/Prototypes'
-
 // import Link from '../Link/Link';
 import Linker from '../Linker/Linker'
 

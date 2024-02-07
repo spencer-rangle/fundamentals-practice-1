@@ -1,4 +1,3 @@
-import { Header } from '../Header/Header'
 import MaterialsSection from '../MaterialsSection/MaterialsSection'
 
 const HomePage = () => {

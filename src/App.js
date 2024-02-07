@@ -1,17 +1,8 @@
 // import { NavigationProvider } from './context/navigation';
 // import Router from './components/Router/Router';
 import React from 'react'
-import { Route, Routes, Link } from 'react-router-dom'
-import './App.scss'
-import MaterialsSection from './components/MaterialsSection/MaterialsSection'
+import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/Home/HomePage'
-import Linker from './components/Linker/Linker'
-import Button from './components/Button/Button'
-import {
-  ButtonTypesEnum,
-  ButtonShapesEnum,
-  ButtonSizesEnum,
-} from './components/Button/Button'
 
 // Participants
 import AsokanPage from './components/Participants/Asokan/AsokanPage'
@@ -29,33 +20,12 @@ import ForEachPage from './components/MaterialsSection/ForEachPage/ForEachPage'
 import MapLoopPage from './components/MaterialsSection/MapLoopPage/MapLoopPage'
 import ReducePage from './components/MaterialsSection/ReducePage/ReducePage'
 import PrototypePage from './components/MaterialsSection/Prototypes/Prototypes'
+import { Header } from './components/Header/Header'
 
 const App = () => {
-  const handleHomeClick = (event) => {
-    console.log('Back to Home')
-    console.log(window.location)
-    window.location = 'http://localhost:3000/'
-  }
-
   return (
-    <div>
-      <h1>App Running</h1>
-      {/* onClick={(event) => { handleHomeClick(event) }} */}
-      <Button
-        type={ButtonTypesEnum.primary}
-        shape={ButtonShapesEnum.rounded}
-        size={ButtonSizesEnum.big}
-        border={true}
-        hollow={false}
-        gradient={true}
-        shadow={true}
-      >
-        {/* Home */}
-        <Linker key="home" destination="./">
-          Home
-        </Linker>
-      </Button>
-
+    <>
+      <Header />
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/asokan" element={<AsokanPage />} />
@@ -72,7 +42,7 @@ const App = () => {
         <Route path="/reduce" element={<ReducePage />} />
         <Route path="/prototype" element={<PrototypePage />} />
       </Routes>
-    </div>
+    </>
   )
 }
 

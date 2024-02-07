@@ -1,4 +1,4 @@
-import '../../Common.scss';
+import '../../Common.css'
 
 const ForLoopPage = () => {
   return (
@@ -6,7 +6,11 @@ const ForLoopPage = () => {
       <h1>For Loop Page</h1>
       <div>
         <p>
-          A for loop is a control flow statement that allows you to repeatedly execute a block of code a specific number of times. It consists of three parts: initialization, condition, and iteration statement. The loop initializes a variable, checks a condition before each iteration, and increments or updates the variable after each iteration.
+          A for loop is a control flow statement that allows you to repeatedly
+          execute a block of code a specific number of times. It consists of
+          three parts: initialization, condition, and iteration statement. The
+          loop initializes a variable, checks a condition before each iteration,
+          and increments or updates the variable after each iteration.
         </p>
 
         <div className="code-container">
@@ -15,7 +19,8 @@ const ForLoopPage = () => {
               const somethingArr = [4, 6, 90, 134, 22, 90, 14];
               <br />
               <br />
-              {`for (let i = 0; i < somethingArr.length; i ++)`} {`{ somethingArr[i] ++; }`}
+              {`for (let i = 0; i < somethingArr.length; i ++)`}{' '}
+              {`{ somethingArr[i] ++; }`}
               <br />
               // [5, 7, 91, 135, 23, 91, 15];
             </code>

@@ -30,28 +30,18 @@ const materialLinks = materialItems.map((item) => {
   console.log('materials')
   console.log(item)
   return (
-    // <div key={item.key}>Link for here</div>
     <Linker key={item.label} destination={item.destination}>
-      <h3>{item.label}</h3>
+      <div>{item.label}</div>
     </Linker>
   )
 })
 
 const MaterialsSection = () => {
-  return <div>{materialLinks}</div>
+  return (
+    <div className="grid grid-cols-4 gap-4 align-start justify-center h-56 p-10">
+      {materialLinks}
+    </div>
+  )
 }
 
 export default MaterialsSection
-
-// data types
-
-// function
-// arrow funcion =>
-
-// if, if else, else
-
-// for
-// .forEach
-// .map
-
-// .reduce

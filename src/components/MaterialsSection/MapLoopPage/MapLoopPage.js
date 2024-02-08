@@ -2,8 +2,10 @@ import '../../Common.css'
 
 const MapLoopPage = () => {
   return (
-    <div>
-      <h1>Map Loop Page</h1>
+    <div className="p-10">
+      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
+        Map Loop Page
+      </h1>
       <p>
         Used to iterate over each element of an array, apply a provided function
         to each element, <br />

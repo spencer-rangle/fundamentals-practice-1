@@ -2,8 +2,10 @@ import '../../Common.css'
 
 const IfStatementPage = () => {
   return (
-    <div>
-      <h1>If Statement Page</h1>
+    <div className="p-10">
+      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
+        If Statement Page
+      </h1>
       <p>
         The if, else if, and else statements are used to control the flow of a
         program based on conditional logic. These statements allow you to

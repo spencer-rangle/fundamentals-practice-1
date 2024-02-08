@@ -2,8 +2,10 @@ import '../../Common.css'
 
 const ArrowFunctionPage = () => {
   return (
-    <div>
-      <h1>Arrow Function Page</h1>
+    <div className="p-10">
+      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
+        Arrow Function Page
+      </h1>
 
       <p>
         A JavaScript arrow function is a concise way to write anonymous

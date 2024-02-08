@@ -2,8 +2,10 @@ import '../../Common.css'
 
 const ForEachPage = () => {
   return (
-    <div>
-      <h1>forEach Loop</h1>
+    <div className="p-10">
+      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
+        forEach Loop
+      </h1>
       <p>
         The forEach loop is an array method to iterate over and perform a
         specified operation for each element.
@@ -50,16 +52,16 @@ const ForEachPage = () => {
                   console.log(num);
                 }`}
                 );
-                <li>// Output:</li>
-                <li>// 1</li>
-                <li>// 2</li>
-                <li>// 3</li>
-                <li>// 4</li>
-                <li>// 5</li>
+                <li>Output:</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
               </code>
             </pre>
           </div>
-          <li>// Example 2: Doubling each element in an array</li>
+          <li>Example 2: Doubling each element in an array</li>
           <div className="code-container">
             <pre>
               <code>

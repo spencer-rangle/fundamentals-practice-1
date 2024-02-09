@@ -25,7 +25,11 @@ const materialLinks = materialItems.map((item) => {
 
 const MaterialsSection = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 align-start justify-center h-56 p-10">
+    /* Tailwind uses a mobile-first breakpoint system, meaning
+     grid-cols-1 applies to all screen sizes by default, 
+     then md:grid-cols-2 applies from the md breakpoint and up,
+      and lg:grid-cols-4 applies from the lg breakpoint and up. */
+    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 align-start justify-center h-56 p-10">
       {materialLinks}
     </div>
   )

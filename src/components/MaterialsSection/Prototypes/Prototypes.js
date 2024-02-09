@@ -7,7 +7,7 @@ const PrototypePage = () => {
       <section>
         {' '}
         JavaScript implements inheritance by using objects. Prototypes are
-        Objects from which other objects inherit properties
+        Objects from which other objects inherit properties.
       </section>
       <div className="code-container">
         <pre>

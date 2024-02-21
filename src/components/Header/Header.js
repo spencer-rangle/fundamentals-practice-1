@@ -8,14 +8,14 @@ export function Header() {
       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <NavLink
           to="./"
-          className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          className="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-teal-950 mr-4"
         >
           Home
         </NavLink>
         <NavLink
           to="./Login"
           id="login"
-          className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          className="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-teal-950 mr-4"
         >
           Login
         </NavLink>

@@ -2,7 +2,7 @@ import MaterialsSection from '../MaterialsSection/MaterialsSection'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="p-10">
       {/* <h2>Participants</h2> */}
       {/*
           The ParticipantPage was to showcase work done by contributors
@@ -10,9 +10,7 @@ const HomePage = () => {
         */}
       {/* TODO: Possibly remove VVV, discuss first? */}
       {/* <ParticipantsPage /> */}
-      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5 pl-10">
-        Lesson Materials
-      </h1>
+      <h1>Lesson Materials</h1>
       <MaterialsSection />
     </div>
   )

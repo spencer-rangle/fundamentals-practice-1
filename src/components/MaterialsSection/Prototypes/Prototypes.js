@@ -1,9 +1,7 @@
 const PrototypePage = () => {
   return (
     <div className="p-10">
-      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
-        Prototype
-      </h1>
+      <h1>Prototype</h1>
       <section>
         {' '}
         JavaScript implements inheritance by using objects. Prototypes are
@@ -54,7 +52,7 @@ const PrototypePage = () => {
       </div>
       <br />
       <div>
-        <h3 className="text-l font-bold">References</h3>
+        <h3>References</h3>
         <ul>
           <li>
             <a

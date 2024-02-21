@@ -1,9 +1,7 @@
 const ReducePage = () => {
   return (
     <div className="p-10">
-      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
-        Reduce Page
-      </h1>
+      <h1>Reduce Page</h1>
       <div className="code-container">
         <pre>
           <code>

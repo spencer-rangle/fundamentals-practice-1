@@ -63,9 +63,7 @@ const materialLinks = materialItems.map((item) => {
       destination={item.destination}
       subtext={item.subtext}
     >
-      <h2 className="mb-2 text-2xl font-extrabold text-gray-900 md:text-2xl lg:text-2xl dark:text-black p-2">
-        {item.label}
-      </h2>
+      <h2> {item.label}</h2>
       <p className="p-2">{item.subtext}</p>
     </Linker>
   )

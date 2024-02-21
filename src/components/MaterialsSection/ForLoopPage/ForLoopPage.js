@@ -3,9 +3,7 @@ import '../../Common.css'
 const ForLoopPage = () => {
   return (
     <div className="p-10">
-      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
-        For Loop Page
-      </h1>
+      <h1>For Loop Page</h1>
       <div>
         <p>
           A for loop is a control flow statement that allows you to repeatedly

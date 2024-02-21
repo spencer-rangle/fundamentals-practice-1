@@ -3,9 +3,7 @@ import '../../Common.css'
 const ForEachPage = () => {
   return (
     <div className="p-10">
-      <h1 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl dark:text-black pt-5">
-        forEach Loop
-      </h1>
+      <h1>forEach Loop</h1>
       <p>
         The forEach loop is an array method to iterate over and perform a
         specified operation for each element.

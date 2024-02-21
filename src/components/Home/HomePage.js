@@ -2,7 +2,7 @@ import MaterialsSection from '../MaterialsSection/MaterialsSection'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="p-10">
       {/* <h2>Participants</h2> */}
       {/*
           The ParticipantPage was to showcase work done by contributors

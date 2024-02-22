@@ -53,6 +53,12 @@ const materialItems = [
     destination: '/prototype',
   },
   {
+    label: 'Storybook',
+    subtext: `Storybook is used for building components in isolation, testing and team collaboration.
+`,
+    destination: '/storybook',
+  },
+  {
     label: 'Tailwind',
     subtext: `Tailwind is a utility first CSS Framework that streamlines web development by providing a set of pre-designed, low-level utility classes for building responsive and customizable user interfaces.
 

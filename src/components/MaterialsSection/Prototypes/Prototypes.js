@@ -56,6 +56,7 @@ const PrototypePage = () => {
         <ul>
           <li>
             <a
+              className="ref-links"
               href="https://www.notion.so/rangle/JavaScript-Prototypes-48f4c2e961e44a3488e56b53ecee9b2d"
               rel="noopener"
             >
@@ -64,6 +65,7 @@ const PrototypePage = () => {
           </li>
           <li>
             <a
+              className="ref-links"
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
               rel="noopener"
             >
@@ -72,6 +74,7 @@ const PrototypePage = () => {
           </li>
           <li>
             <a
+              className="ref-links"
               href="https://frontendmasters.com/courses/getting-started-javascript-v2/prototypes/"
               rel="noopener"
             >

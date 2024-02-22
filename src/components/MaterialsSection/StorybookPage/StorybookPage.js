@@ -92,12 +92,17 @@ const StorybookPage = () => {
         <h3>References</h3>
         <ul>
           <li>
-            <a href="https://storybook.js.org/" rel="noopener">
+            <a
+              className="ref-links"
+              href="https://storybook.js.org/"
+              rel="noopener"
+            >
               Storybook Website
             </a>
           </li>
           <li>
             <a
+              className="ref-links"
               href="https://docs.google.com/presentation/d/1sVBY2Rim8Lo9-W9OjVJ96JCcfqmcxd1uCnMZ-aPQF8o/edit#slide=id.g24fff31ecec_0_423"
               rel="noopener"
             >
@@ -106,6 +111,7 @@ const StorybookPage = () => {
           </li>
           <li>
             <a
+              className="ref-links"
               href="https://github.com/rangle/storybook-workflow-workshop/blob/main/components/ui/Profile/profile.test.stories.tsx"
               rel="noopener"
             >

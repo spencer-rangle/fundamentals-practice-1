@@ -1,24 +1,18 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
+import DropDown from '../DropDown/DropDown'
 
 export function Header() {
   return (
     <>
       {/* header */}
       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <NavLink
-          to="./"
-          className="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-teal-950 mr-4"
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="./Login"
-          id="login"
-          className="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-teal-950 mr-4"
-        >
-          Login
-        </NavLink>
+        {/* 
+          on click open drawer/dropdown with list of menu list items
+          create the drawer/dropdown
+          make the dropdown appear over other components
+        */}
+        <DropDown />
       </nav>
       <hr />
     </>

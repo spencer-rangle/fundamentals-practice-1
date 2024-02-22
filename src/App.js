@@ -21,6 +21,7 @@ import MapLoopPage from './components/MaterialsSection/MapLoopPage/MapLoopPage'
 import ReducePage from './components/MaterialsSection/ReducePage/ReducePage'
 import PrototypePage from './components/MaterialsSection/Prototypes/Prototypes'
 import { Header } from './components/Header/Header'
+import TailwindPage from './components/MaterialsSection/TailwindPage/TailwindPage'
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/map-loop" element={<MapLoopPage />} />
         <Route path="/reduce" element={<ReducePage />} />
         <Route path="/prototype" element={<PrototypePage />} />
+        <Route path="/tailwind" element={<TailwindPage />} />
       </Routes>
     </>
   )

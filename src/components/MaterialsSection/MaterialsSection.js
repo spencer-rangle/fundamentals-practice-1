@@ -52,11 +52,20 @@ const materialItems = [
         Objects from which other objects inherit properties.`,
     destination: '/prototype',
   },
+  {
+    label: 'Tailwind',
+    subtext: `Tailwind is a utility first CSS Framework that streamlines web development by providing a set of pre-designed, low-level utility classes for building responsive and customizable user interfaces.
+
+
+
+
+
+`,
+    destination: '/tailwind',
+  },
 ]
 
 const materialLinks = materialItems.map((item) => {
-  console.log('materials')
-  console.log(item)
   return (
     <Linker
       key={item.label}

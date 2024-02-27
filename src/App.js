@@ -1,6 +1,6 @@
 // import { NavigationProvider } from './context/navigation';
 // import Router from './components/Router/Router';
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/Home/HomePage'
 
@@ -23,11 +23,12 @@ import PrototypePage from './components/MaterialsSection/Prototypes/Prototypes'
 import { Header } from './components/Header/Header'
 
 const App = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false) // initiate isNavOpen state with false
   return (
     <>
-      <Header />
+      <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Routes>
-        <Route path="/" exact element={<HomePage />} />
+        <Route path="/" exact element={<HomePage isNavOpen={isNavOpen} />} />
         <Route path="/asokan" element={<AsokanPage />} />
         <Route path="/geethu" element={<GeethuPage />} />
         <Route path="/karen" element={<KarenPage />} />

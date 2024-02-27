@@ -2,7 +2,7 @@ import React from 'react'
 
 import DropDown from '../DropDown/DropDown'
 
-export function Header() {
+export function Header(props) {
   return (
     <>
       {/* header */}
@@ -12,7 +12,10 @@ export function Header() {
           create the drawer/dropdown
           make the dropdown appear over other components
         */}
-        <DropDown />
+        <DropDown
+          isNavOpen={props.isNavOpen}
+          setIsNavOpen={props.setIsNavOpen}
+        />
       </nav>
       <hr />
     </>
